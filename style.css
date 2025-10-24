@@ -1,0 +1,145 @@
+/* Hero Section */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    background-image: url(./black-particles-background.png);
+    height: auto;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(42, 41, 41, 0.555);
+}
+
+.social div img {
+    height: 25px;
+}
+
+.social div:hover {
+    transform: scale(1.1);
+    transition: all ease 0.6s;
+    box-shadow: 0px 0px 6px #dc3545;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #dc3545;
+    transition: all ease 0.6s;
+}
+
+.intro h1 {
+    font-weight: bold;
+    text-shadow: 0px 0px 6px #DC3545;
+}
+
+.profile {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./profile.jpg);
+    clip-path: circle(50% at 50% 50%);
+}
+
+@media (max-width: 576px) {
+    .social div {
+        height: 40px;
+        width: 40px;
+    }
+
+    .social div img {
+        height: 20px;
+    }
+}
+
+/* About Section */
+.card {
+    background-color: rgba(67, 65, 65, 0.233);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 12px rgb(23, 23, 23);
+}
+
+.fa-solid {
+    font-size: 35px;
+}
+
+.fa-download,
+.fa-envelope-circle-check {
+    font-size: 15px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.edu,
+.exp {
+    box-shadow: 0px 0px 12px rgb(23, 23, 23);
+    background-color: rgba(67, 65, 65, 0.233);
+    backdrop-filter: blur(10px);
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.card:hover,
+.exp:hover {
+    border: 1px solid rgba(255, 0, 0, 0.494);
+    transform: translateY(-8px);
+    transition: all ease 0.9s;
+}
+
+.edu:hover {
+    border: 1px solid rgba(255, 0, 0, 0.494);
+    transform: translateX(8px);
+    transition: all ease 0.9s;
+}
+.skills{
+    background-color: rgb(26, 25, 25);
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+/* resume section */
+
+.education h2,
+.experience h2 {
+    text-shadow: 0px 0px 2px white;
+}
+.hero h1,
+.resume h1,
+.skills h1,
+.About h1 {
+    text-shadow: 0px 0px 2px red;
+    font-size: 40px;
+}
+.fa-code{
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    .fa-solid {
+        font-size: 30px;
+    }
+}
