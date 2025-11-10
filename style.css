@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 .hero {
@@ -11,6 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .social div {
@@ -66,9 +68,23 @@
     .social div img {
         height: 20px;
     }
+
+    .section-links {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        height: 100vh;
+        padding-top: 40px;
+        width: 200px;
+        background-color: #292828;
+        text-align: center;
+    }
 }
 
 /* About Section */
+.About{
+    overflow-x: hidden;
+}
 .card {
     background-color: rgba(67, 65, 65, 0.233);
     backdrop-filter: blur(10px);
@@ -115,11 +131,14 @@
     transform: translateX(8px);
     transition: all ease 0.9s;
 }
-.skills{
+
+/* skills section */
+.skills {
     background-color: rgb(26, 25, 25);
     padding-top: 100px;
     padding-bottom: 90px;
 }
+
 
 /* resume section */
 
@@ -127,19 +146,122 @@
 .experience h2 {
     text-shadow: 0px 0px 2px white;
 }
+
 .hero h1,
 .resume h1,
 .skills h1,
-.About h1 {
+.About h1,
+.services h1,
+.contact h1 {
     text-shadow: 0px 0px 2px red;
     font-size: 40px;
 }
-.fa-code{
+
+.fa-code {
     font-size: 20px;
 }
 
 @media (max-width: 576px) {
     .fa-solid {
         font-size: 30px;
+    }
+
+    .progress {
+        width: 90%;
+    }
+}
+
+/* Section Services */
+.services .fa-solid {
+    font-size: 25px;
+}
+
+.services p {
+    font-size: 14px;
+}
+
+.service {
+    box-shadow: 0px 0px 12px rgb(23, 23, 23);
+    background-color: rgba(67, 65, 65, 0.233);
+    backdrop-filter: blur(10px);
+    height: 250px;
+}
+
+.service:hover {
+    border: 1px solid rgba(255, 0, 0, 0.494);
+    transform: translateY(-8px);
+    transition: all ease 0.9s;
+}
+
+.service div {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 6px rgb(31, 30, 30);
+    backdrop-filter: blur(10px);
+    color: #DC3545;
+}
+
+.service:hover div {
+    background-color: #dc3545;
+    color: white;
+    transform: scale(1.1);
+    transition: all ease .7s;
+}
+
+/* contact Section */
+.contact form input,
+.contact form textarea{
+    background-color: transparent;
+    outline: none;
+    border:0.5px solid rgb(63, 62, 62);
+    padding: 10px;
+}
+.contact form input:focus,
+.contact form textarea:focus{
+    background: transparent;
+    box-shadow:0px 0px 10px #DC3545;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color: grey;
+}
+.location,
+.phone,
+.email,
+.form{
+    box-shadow: 0px 0px 12px rgb(23, 23, 23);
+    background-color: rgba(67, 65, 65, 0.233);
+    backdrop-filter: blur(10px);
+}
+.location:hover,
+.phone:hover,
+.email:hover{
+    border: 1px solid rgba(255, 0, 0, 0.494);
+    transform: translateY(-8px);
+    transition: all ease 0.9s;
+}
+
+@media (max-width: 576px) {
+    footer p{
+        text-align: center;
+    }
+    footer h3{
+        text-align: center;
+    }
+    footer a{
+        font-size: 10px;
+    }
+    footer .links{
+        margin-left: 100px;
+    }
+}
+@media (max-width: 768px) {
+    footer p{
+        text-align: center;
+    }
+    footer h3{
+        text-align: center;
     }
 }
